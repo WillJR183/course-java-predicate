@@ -3,7 +3,6 @@ package application;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
-import java.util.function.Predicate;
 
 import entities.Product;
 
@@ -25,9 +24,8 @@ public class Program {
 		
 		System.out.println();
 		
-		double min = 100.0;
-		Predicate<Product> predicate = x -> x.getPrice() >= min;	
-		list.removeIf(predicate);
+		double min = 100.0;	
+		list.removeIf(x -> x.getPrice() >= min);
 		
 		for(Product p: list) {
 			System.out.println(p);
