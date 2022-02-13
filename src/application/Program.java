@@ -5,7 +5,6 @@ import java.util.List;
 import java.util.Locale;
 
 import entities.Product;
-import util.ProductPredicate;
 
 public class Program {
 
@@ -25,7 +24,7 @@ public class Program {
 		
 		System.out.println();
 		
-		list.removeIf(new ProductPredicate());
+		list.removeIf(Product::staticProductPredicate);
 		
 		for(Product p: list) {
 			System.out.println(p);
