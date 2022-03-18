@@ -6,3 +6,4 @@ método abstrato, onde suas implementações são tratadas como expressões lamb
 ## :paperclip: Referências
 
 * [Udemy - Java Completo com Prof. Nélio Alves](https://www.udemy.com/course/java-curso-completo/)
+* [Predicate](https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html)
